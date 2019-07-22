@@ -5,26 +5,44 @@
 
 html{
 
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
-}
-
-body{
-    background-color: aqua;
 }
 
 header{
     background-color: chocolate;
     border: 1px solid black;
-    float: top;
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa.fa-fw.fa-search{
+    padding-right: 40px;
+    margin: 14px;
+}
+
+.main-logo{
+    min-block-size: 100px;
+    max-block-size: 200px;
+}
+
+.autor-logo-top{
+    display: none;
+}
+
+.comment-card{
+    display: flex;
+}
+
+.comment-card .comment{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .logo{
-    
-    border: 1px solid black;
+    min-block-size: 100px;
 }
-
 
 .social-icons{
     border: 1px solid black;
@@ -32,6 +50,8 @@ header{
 
 .main-menu{
     border: 1px solid black;
+    font-size: 24px;
+    padding: 14px;
 }
 
 
@@ -51,7 +71,7 @@ main{
   background-color: #f1f1f1;
 }
 
-.main-section:after {
+section:after {
     content: "";
     display: table;
     clear: both;
@@ -62,12 +82,66 @@ footer {
     padding: 10px;
     text-align: center;
     color: white;
+}
+
+.author-avatar{
+    max-block-size: 200px;
+}
+
+.site-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 24px;
+    padding: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-author-name {
+    display: none;
+}
+
+@media (max-width: 800px) {
+  aside, main  {
+    width: 100%;
+    height: auto;
   }
 
-  @media (max-width: 600px) {
-    aside , main  {
-      width: 100%;
-      height: auto;
+  .author-info .autor-logo {
+    visibility: hidden;
+    visibility: visible; 
+    display: none;
     }
-  }
 
+    .autor-logo-top{
+        display: block;
+        background-color: #ccc;
+        
+        padding: 14px;
+        margin: 14px;
+        
+    }
+}
+
+.user-post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.user-post .card-logo {
+    min-width:200px;
+    max-width: 300px;
+    padding: 10px;    
+    transition: all .2s ease-in-out;
+}
+
+.user-post .card-logo:hover {
+    transform: scale(1.5);
+}
