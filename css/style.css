@@ -10,7 +10,7 @@ html{
 }
 
 header{
-    background-color: chocolate;
+    background-color: white;
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
@@ -24,6 +24,14 @@ header{
 .main-logo{
     min-block-size: 100px;
     max-block-size: 200px;
+}
+
+.author-name{
+    font-size: 40px;
+}
+
+.description{
+    font-size: 24px;
 }
 
 .autor-logo-top{
@@ -44,13 +52,14 @@ header{
     min-block-size: 100px;
 }
 
-.social-icons{
-    border: 1px solid black;
-}
 
 .main-menu{
-    border: 1px solid black;
+    
     font-size: 24px;
+
+}
+
+.menu-href{
     padding: 14px;
 }
 
@@ -122,10 +131,22 @@ a {
     .autor-logo-top{
         display: block;
         background-color: #ccc;
-        
+        display: flex;
+
         padding: 14px;
         margin: 14px;
         
+    }
+
+    .autor-logo-top .author-avatar{
+        float: left;
+    }
+
+    .autor-logo-top .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 14px;
     }
 }
 
