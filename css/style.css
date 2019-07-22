@@ -209,7 +209,7 @@ a {
     transition: all .2s ease-in-out;
 }
 
-.user-post .card-logo:hover {
+.user-post .card-logo:hover .card-image{
     transform: scale(1.5);
 }
 
@@ -217,4 +217,24 @@ a {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.card-logo .card-image{
+    max-block-size: 200px;
+}
+
+.card-logo .card-header{
+    font-size: 24px;
+}
+
+.card-logo .publication-time{
+    font-size: 20px;
+}
+
+.card-logo .description{
+    font-size: 18px;
+}
+
+.fa.fa-fw.fa-heart{
+    margin: 12px;
 }
