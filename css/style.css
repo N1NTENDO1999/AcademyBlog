@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+html{
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa.fa-fw.fa-search{
+    padding-right: 40px;
+    margin: 14px;
+}
+
+.main-logo{
+    min-block-size: 100px;
+    max-block-size: 200px;
+}
+
+.description{
+    font-size: 24px;
+}
+
+.autor-logo-top{
+    display: none;
+}
+
+.comment-card{
+    display: flex;
+    border: 1px solid black;
+    margin: 12px;
+    min-width: 300px;
+    padding: 14px;
+}
+
+.logo{
+    min-block-size: 100px;
+}
+
+
+.main-menu{
+    
+    font-size: 24px;
+
+}
+
+.menu-href{
+    padding: 14px;
+}
+
+
+aside{
+    float: right;
+  width: 30%;
+  
+  background: #ccc;
+  padding: 20px;
+}
+
+
+main{
+    float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.author-avatar{
+    max-block-size: 200px;
+}
+
+.social-icons{
+    margin: 20px;
+    font-size: 24px;
+    padding: 14px;
+}
+
+.teg-block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teg-block p{
+    padding: 2px;
+    margin: 2px;
+}
+
+.author-info .social-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+   
+}
+
+.subscribe-form{
+    margin: 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-form{
+    display: flex;
+    padding: 21px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-author-name {
+    display: none;
+}
+
+@media (max-width: 800px) {
+  aside, main  {
+    width: 100%;
+    height: auto;
+  }
+
+  .author-info .autor-logo {
+    visibility: hidden;
+    visibility: visible; 
+    display: none;
+    }
+
+    .autor-logo-top{
+        display: block;
+        background-color: #ccc;
+        display: flex;
+
+        padding: 14px;
+        margin: 14px;
+        
+    }
+
+    .autor-logo-top .author-avatar{
+        float: left;
+    }
+
+    .autor-logo-top .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 14px;
+    }
+}
+
+.last-comments{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.comment-card .autor-logo{
+        max-block-size: 100px;
+        float: left;
+    }
+
+    .comment-card .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 65%;
+        max-height: 100px;
+        margin: 14px;
+    }
+
+
+.user-post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.user-post .card-logo {
+    min-width:200px;
+    max-width: 300px;
+    padding: 10px;    
+    transition: all .2s ease-in-out;
+}
+
+.user-post .card-logo:hover .card-image{
+    transform: scale(1.5);
+}
+
+.info .comment{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card-logo .card-image{
+    max-block-size: 200px;
+}
+
+.card-logo .card-header{
+    font-size: 24px;
+}
+
+.card-logo .publication-time{
+    font-size: 20px;
+}
+
+.card-logo .description{
+    font-size: 18px;
+}
+
+.fa.fa-fw.fa-heart{
+    margin: 12px;
+}
